@@ -12,14 +12,20 @@
 - Utiliza VueJS 2.5 CDN para la funcionalidad de la aplicación.
 - Utiliza Finisher.co para el fondo animado.
 - Utiliza Animate.css para las transiciones de entrada.
-  ###Tecnologías utilizadas
+
+### Tecnologías utilizadas
+
 - HTML5: Utilizado para estructurar el contenido de la página.
 - CSS3 con variables globales: Utilizado para dar estilo a la página.
 - VueJS 2.5 CDN: Utilizado para la funcionalidad de la aplicación.
 - Finisher.co: Utilizado para el fondo animado.
 - Animate.css: Utilizado para las transiciones de entrada.
-  ###Cómo utilizar
-  Para utilizar la aplicación, simplemente ingresa la cadena de texto en el campo de entrada y haz clic en el botón "Desencriptar". La aplicación validará la cadena de texto y luego la desencriptará para mostrar los datos en un objeto en pantalla.
-  ###Créditos
+
+### Cómo utilizar
+
+Para utilizar la aplicación, simplemente ingresa la cadena de texto en el campo de entrada y haz clic en el botón "Desencriptar". La aplicación validará la cadena de texto y luego la desencriptará para mostrar los datos en un objeto en pantalla.
+
+### Créditos
+
 - [Finisher.co](http://https://finisher.co/lab/header/ "Finisher.co"): Para el fondo animado.
 - [Animate.css](http://https://animate.style/ "Animate.css"): Para las transiciones de entrada.
