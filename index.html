@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DigitalHype - Decrypt</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./js/finisher-header.es5.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <div id="app" class="finisher-header">
+      <h1 class="animate__animated animate__fadeIn">{{titulo}}</h1>
+      <div class="formulario animate__animated animate__fadeInUp">
+        <label for="cadena-encriptada">Ingrese la cadena encriptada</label>
+        <input placeholder="john000doe000123" type="text" name="cadena-encriptada" id="cadena-encriptada" v-model="cadenaEncriptada" />
+        <button @click="desencriptar()">Desencriptar Cadena</button>
+      </div>
+
+      <div class="resultado animate__animated animate__fadeInUp" v-if="resultado !== null">
+        <h2>Ultimo Resultado:</h2>
+        <ul>
+          <li><span>Nombre:</span> {{resultado.first_name}}</li>
+          <li><span>Apellido:</span> {{resultado.last_name}}</li>
+          <li><span>ID:</span> {{resultado.id}}</li>
+        </ul>
+        <p>{{resultado}}</p>
+      </div>
+      <div class="error animate__animated animate__fadeInDown" v-if="showError === true">la cadena proporcionada no cumple con el formato requerido "nombre000apellido000identificador"</div>
+      <p class="author">Jose Arturo Muñoz Castorena</p>
+    </div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/finisher.js"></script>
+  </body>
+</html>

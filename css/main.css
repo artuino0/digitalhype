@@ -1,0 +1,130 @@
+:root {
+  --text-white: #fff;
+  --green-1: rgb(195, 255, 205);
+  --green-2: rgb(119, 255, 128);
+  --green-3: rgb(30, 91, 31);
+  --red-1: rgb(255, 195, 195);
+  --red-2: rgb(255, 119, 119);
+  --red-3: rgb(255, 73, 73);
+  --gray-1: rgb(218, 218, 218);
+  --gray-2: rgb(56, 56, 56);
+  --button-bg-color: #1cc647;
+  --button-text-color: #fff;
+  --button-hover-bg-color: #0fa53a;
+}
+
+body,
+html,
+#app {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.finisher-header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+h1,
+.formulario > label {
+  color: var(--text-white);
+}
+
+.formulario > input {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+  outline: none;
+}
+
+.formulario > button {
+  display: inline-block;
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.formulario > button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.resultado > h1 {
+  color: var(--text-white);
+}
+
+.resultado > p {
+  margin: 20px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: var(--green-1);
+  border: 1px solid var(--green-2);
+  font-size: 0.9rem;
+  color: var(--green-3);
+}
+
+.resultado > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid var(--gray-1);
+}
+
+.resultado > ul > li {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: var(--gray-2);
+  background-color: var(--text-white);
+}
+
+.resultado > ul > li:not(:last-child) {
+  border-bottom: 1px solid var(--gray-1);
+}
+
+.resultado > ul > li > span {
+  font-weight: bold;
+  color: var(--gray-2);
+}
+
+.error {
+  position: fixed;
+  margin: 20px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: var(--red-1);
+  border: 1px solid var(--red-2);
+  font-size: 0.9rem;
+  color: var(--red-3);
+  top: 0;
+}
+
+.author {
+  position: fixed;
+  bottom: 0;
+  color: var(--text-white);
+}
