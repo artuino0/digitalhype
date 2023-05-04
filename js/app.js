@@ -15,7 +15,7 @@ const app = new Vue({
         return;
       }
       this.showError = false;
-      let partes = this.cadenaEncriptada.split("000");
+      let partes = this.cadenaEncriptada.split(/0+/);
       this.resultado = {
         first_name: partes[0],
         last_name: partes[1],
@@ -24,7 +24,7 @@ const app = new Vue({
       console.log(this.resultado);
     },
     validarCadena: function (cadena) {
-      const regex = /^[a-zA-Z]+000[a-zA-Z]+000\d+$/;
+      const regex = /^[a-zA-Z]+0+[a-zA-Z]+0+\d+$/;
       return regex.test(cadena);
     },
     disableError: function () {
